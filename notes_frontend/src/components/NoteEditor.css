@@ -1,0 +1,66 @@
+.NoteEditor {
+  flex: 1 1 auto;
+  max-width: 680px;
+  margin: 36px auto;
+  background: #fff;
+  min-height: 200px;
+  border-radius: 9px;
+  box-shadow: 0 4px 18px 0 rgba(25, 118, 210, 0.045);
+  padding: 32px 28px 19px 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.NoteEditor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.NoteEditor-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-bottom: 2px solid #1976D2;
+  background: transparent;
+  padding: 7px 4px;
+  color: #1976D2;
+  outline: none;
+  margin-bottom: 2px;
+}
+
+.NoteEditor-content {
+  resize: vertical;
+  font-size: 1rem;
+  border: 1px solid #b2c2d5;
+  border-radius: 6px;
+  padding: 10px;
+  min-height: 120px;
+  color: #424242;
+  line-height: 1.55;
+  background: #f8fafc;
+}
+
+.NoteEditor-actions {
+  display: flex;
+  gap: 13px;
+  margin-top: 15px;
+}
+
+.NoteEditor-save-btn,
+.NoteEditor-delete-btn {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 9px 23px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.18s;
+  cursor: pointer;
+}
+
+.NoteEditor-save-btn:disabled,
+.NoteEditor-delete-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

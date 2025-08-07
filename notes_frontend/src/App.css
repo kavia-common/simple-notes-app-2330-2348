@@ -1,0 +1,82 @@
+:root {
+  --color-primary: #1976D2;
+  --color-secondary: #424242;
+  --color-accent: #FF4081;
+  --bg-main: #f6f9fb;
+  --bg-sidebar: #f8f9fa;
+  --text: #222;
+  --border: #E9ECEF;
+}
+
+/* Layout */
+.NotesAppRoot {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-main);
+}
+
+.NotesAppMain {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: #f6f9fb;
+}
+
+.NotesAppHeader {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 34px 38px 0 38px;
+  color: var(--color-primary);
+  letter-spacing: 0.016em;
+}
+
+.NotesAppError {
+  margin: 15px 0 0 0;
+  padding: 10px 26px;
+  color: #fff;
+  background: #FF4081;
+  border-radius: 7px;
+  align-self: flex-start;
+}
+.NotesAppFooter {
+  margin-top: auto;
+  color: #888;
+  background: transparent;
+  padding: 24px 0 15px 34px;
+  font-size: 1rem;
+  opacity: 0.88;
+}
+
+@media (max-width: 840px) {
+  .NotesAppRoot {
+    flex-direction: column;
+  }
+  .NotesAppMain {
+    padding: 0 7px;
+  }
+  .NotesAppHeader {
+    padding: 23px 11px 0 11px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .NotesAppRoot {
+    flex-direction: column;
+  }
+  .NotesAppMain {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Remove scrollbar for whole app except note list */
+body, html {
+  background: var(--bg-main);
+  overscroll-behavior-y: none;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
