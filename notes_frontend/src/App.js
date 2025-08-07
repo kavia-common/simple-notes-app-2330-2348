@@ -118,7 +118,7 @@ function App() {
       />
       <main className="NotesAppMain">
         <div className="NotesAppHeader">
-          <span style={{ color: "#1976D2", fontWeight: 700, fontSize: 22 }}>
+          <span style={{ color: "#000", fontWeight: 700, fontSize: 22 }}>
             Simple Notes
           </span>
         </div>
@@ -135,7 +135,7 @@ function App() {
         />
         <footer className="NotesAppFooter">
           <span>
-            Built with <span style={{ color: "#FF4081" }}>❤</span> using
+            Built with <span style={{ color: "#000" }}>♥</span> using
             Supabase & React.
           </span>
         </footer>

@@ -5,7 +5,7 @@
   background: #fff;
   min-height: 200px;
   border-radius: 9px;
-  box-shadow: 0 4px 18px 0 rgba(25, 118, 210, 0.045);
+  box-shadow: 0 4px 18px 0 rgba(40,40,40, 0.065);
   padding: 32px 28px 19px 28px;
   display: flex;
   flex-direction: column;
@@ -21,10 +21,10 @@
   font-size: 1.2rem;
   font-weight: bold;
   border: none;
-  border-bottom: 2px solid #1976D2;
+  border-bottom: 2px solid #000;
   background: transparent;
   padding: 7px 4px;
-  color: #1976D2;
+  color: #000;
   outline: none;
   margin-bottom: 2px;
 }
@@ -32,13 +32,13 @@
 .NoteEditor-content {
   resize: vertical;
   font-size: 1rem;
-  border: 1px solid #b2c2d5;
+  border: 1px solid #c4c4c4;
   border-radius: 6px;
   padding: 10px;
   min-height: 120px;
-  color: #424242;
+  color: #222;
   line-height: 1.55;
-  background: #f8fafc;
+  background: #f9f9f9;
 }
 
 .NoteEditor-actions {
@@ -49,13 +49,14 @@
 
 .NoteEditor-save-btn,
 .NoteEditor-delete-btn {
-  border: none;
+  border: 1px solid #000;
   border-radius: 5px;
   color: #fff;
+  background: #000;
   padding: 9px 23px;
   font-size: 1rem;
   font-weight: 500;
-  transition: background 0.18s;
+  transition: background 0.18s, color 0.18s;
   cursor: pointer;
 }
 
@@ -63,4 +64,14 @@
 .NoteEditor-delete-btn:disabled {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+.NoteEditor-delete-btn {
+  background: #fff;
+  color: #000;
+  border: 1px solid #444;
+}
+.NoteEditor-delete-btn:disabled {
+  background: #f3f3f3;
+  color: #888;
 }

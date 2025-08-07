@@ -53,7 +53,6 @@ function NoteEditor({ note, onSave, onDelete, loading }) {
             type="submit"
             disabled={loading}
             className="NoteEditor-save-btn"
-            style={{ background: "#1976D2" }}
           >
             {loading
               ? "Saving..."
@@ -66,7 +65,6 @@ function NoteEditor({ note, onSave, onDelete, loading }) {
               type="button"
               className="NoteEditor-delete-btn"
               onClick={onDelete}
-              style={{ background: "#FF4081" }}
               disabled={loading}
             >
               {loading ? "..." : "Delete"}
